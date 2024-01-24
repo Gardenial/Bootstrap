@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #191825;
     color: #fff;
-    height: 320vh;
+    height: 100%;
   }
   
   header {
@@ -69,8 +69,7 @@ body {
     margin-top: 0.5rem;
   }
   
-  footer {
-    position: fixed;
+  footer {  
     bottom: 0;
     width: 100%;
     background-color: #191825;
