@@ -1,0 +1,168 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #191825;
+  color: #fdfdfd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #e384ff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #fdfdfd;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  color: #fdfdfd;
+}
+
+.navbar-toggler-icon {
+  background-color: #fdfdfd;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #fdfdfd;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url("download.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fdfdfd;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #865dff;
+  border-color: #865dff;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #5c3fa2;
+  border-color: #5c3fa2;
+}
+
+/* Game Cards */
+.game-card {
+  background-color: #191825;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.game-card h5 {
+  margin: 20px 0;
+}
+
+.game-card p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.game-card a.btn-primary {
+  background-color: #e384ff;
+  border-color: #e384ff;
+}
+
+.game-card a.btn-primary:hover {
+  background-color: #b563d1;
+  border-color: #b563d1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.5em;
+  }
+
+  .jumbotron p {
+    font-size: 1.2em;
+  }
+
+  .game-card {
+    margin-bottom: 30px;
+  }
+}

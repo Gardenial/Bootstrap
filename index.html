@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3s4Wz6iJgD/+ub2oU"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #191825;
+        color: #fdfdfd;
+      }
+
+      .navbar {
+        background-color: #191825;
+        padding: 15px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        color: #fdfdfd;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      .navbar-brand:hover {
+        color: #fff;
+      }
+
+      .navbar-toggler {
+        border: none;
+        color: #191825;
+      }
+
+      .navbar-toggler-icon {
+        background-color: #191825;
+      }
+
+      .navbar-nav {
+        margin-left: auto;
+      }
+
+      .nav-item {
+        margin-right: 15px;
+      }
+
+      .nav-link {
+        color: #fdfdfd;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #fff;
+      }
+
+      .jumbotron {
+        background-image: url("download.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fdfdfd;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .jumbotron h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .jumbotron p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+      }
+
+      .btn-primary {
+        background-color: #865dff;
+        border-color: #865dff;
+        font-weight: bold;
+      }
+
+      .btn-primary:hover {
+        background-color: #5c3fa2;
+        border-color: #5c3fa2;
+      }
+
+      .game-card {
+        background-color: #191825;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+      }
+
+      .game-card:hover {
+        transform: scale(1.05);
+      }
+
+      .game-card img {
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: auto;
+      }
+
+      .game-card h5 {
+        margin: 20px 0;
+      }
+
+      .game-card p {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+      }
+
+      .game-card a.btn-primary {
+        background-color: #e384ff;
+        border-color: #e384ff;
+      }
+
+      .game-card a.btn-primary:hover {
+        background-color: #b563d1;
+        border-color: #b563d1;
+      }
+      .navbar {
+        background-color: #865dff;
+      }
+      hr {
+        background-color: #e384ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a style="margin-left: 3%" class="navbar-brand" href="index.html"
+        >Garden Games</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Workshop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/marketplace/marketplace.html">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white; ; border-radius: 6.5%; font-size: larger; margin-left: 10%;
+            width: 100px;text-align: center;" class="btn btn-outline-dark" href="login/login.html"><b>Login</b></a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white; ; border-radius: 6.5%; font-size: larger;
+            width: 120px;text-align: center;" class="btn btn-outline-dark" href="login/login.html"><b>Cadastrar</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <h1>Bem vindo ao Garden Games</h1>
+      <p>O melhor site para descobrir e adquirir novos jogos</p>
+      <a href="marketplace/marketplace.html" class="btn btn-primary btn-lg">Comprar</a>
+    </div>
+
+    <!-- Announcement of game Cards (Games f the year) -->
+    <hr style="width: 250px" />
+    <br /><br /><br />
+    <div class="text-center">
+      <h1>Jogos do Ano</h1>
+    </div>
+    <br /><br />
+    <!-- Game Cards -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <div class="game-card text-center">
+            <img style="height: 346px;" src="bg.jpg" alt="Game 1" class="img-fluid mb-3" />
+            <h5>Baldur's Gate 3</h5>
+            <p>Reúna seu grupo e volte aos Reinos Esquecidos em uma história de amizade e traição, sacrifício e sobrevivência, e tentação pelo poder absoluto.</p>
+            <a href="/games/bg.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="game-card text-center">
+            <img style="height: 346px;" src="game2.jpg" alt="Game 2" class="img-fluid mb-3" />
+            <h5>Allan Wake 2</h5>
+            <p>
+              Uma série de assassinatos ritualísticos ameaça Bright Falls, uma
+              comunidade de cidade pequena cercada pela natureza selvagem do
+              noroeste do Pacífico...
+            </p>
+            <a href="/games/allanwake.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="game-card text-center">
+            <img style="height: 346px;" src="game3.jpg" alt="Super Mario bros. Wonder" class="img-fluid mb-3" />
+            <h5>Super Mario Bros. Wonder</h5>
+            <p>A aventura começa no Reino da Flor, que é próximo ao já conhecido Reino do Cogumelo. Na história, Mario, Luigi, Peach e vários amigos são convidados pelo carismático Príncipe Florian. </p>
+            <a href="/games/mario.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="game-card text-center">
+            <img style="height: 346px;"  src="game4.webp" alt="The Legend of Zelda: Tears of the Kingdom" class="img-fluid mb-3" />
+            <h5>The Legend of Zelda: Tears of the Kingdom</h5>
+            <p>Com a ressurreição do “Demon King” e Hyrule novamente ameaçada, Link precisa ir em uma nova aventura para encontrar os antepassados.</p>
+            <a href="/games/zelda.html" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="text-center">
+      <h1>Outros jogos bem avaliados</h1>
+    </div>
+    <br><br><br>
+    <!-- Carousels -->
+
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBud7TlRbs/ic4AwGcFZOxg5DpPt8EgeUIgIwzjWfXQKWA3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
